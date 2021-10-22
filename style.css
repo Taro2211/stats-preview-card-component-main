@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Lexend+Deca&display=swap');
+* {
+    box-sizing: border-box;
+  }
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-family: sans-serif, Arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Card*/
+main {
+    width: 1000px;
+    border-radius: 8px;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+}
+.content {
+    width: 50%;
+    font-size: 15px;
+    font-family: 'Inter';
+    padding: 50px;
+}
+
+/*header*/
+h1 {
+    color: white;
+    font-size: 35px;
+    font-family: 'Lexend Deca';
+}
+em {
+    font-style: normal;
+    color: hsl(277, 64%, 61%);
+}
+
+/*main paragraph*/
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 28px;
+    padding-bottom: 60px;
+}
+
+/*stats*/
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+}
+li {
+    display: inline-block;
+    width: 150px;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    line-height: 28px;
+}
+span {
+    color: white;
+    text-transform: none;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+/*image*/
+.img_container {
+    width: 50%;
+    background-color: hsl(274, 100%, 35%);
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+}
+img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+/* Media query for desktop*/
+@media  screen and (max-width: 1150px) {
+    main {
+        width: 800px;
+    }
+    .content {
+        padding-right: 30px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        padding-bottom: 30px;
+    }
+}
+
+/* Media query for mobile and ipad*/
+@media screen and (max-width: 835px) {
+    main {
+        top: 20px;
+        width: 600px;
+        flex-direction: column-reverse;
+    }
+    .img_container {
+        width: 100%;
+        height: 500px;
+        border-radius: 8px 8px 0 0;
+    }   
+    h1 {
+        font-size: 35px;
+    }
+    .content {
+        width: 100%;
+        padding: 40px;
+    }
+    p {
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 625px) {
+    main {
+        width: 450px;
+    }
+    .img_container {
+        height: 350px;
+    }
+    .content {
+        text-align: center;
+    }
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    li {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    main {
+        width: 350px;
+    }
+    .img_container {
+        height: 290px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        padding-bottom: 10px;
+    }
+}
