@@ -3,7 +3,11 @@
 * {
     box-sizing: border-box;
   }
+html {
+    height: 100%;
+}
 body {
+    height: 100%;
     background-color: hsl(233, 47%, 7%);
     font-family: sans-serif, Arial;
     display: flex;
@@ -98,6 +102,9 @@ img {
 
 /* Media query for mobile and ipad*/
 @media screen and (max-width: 835px) {
+    html {
+        height: auto;
+    }
     main {
         top: 20px;
         width: 600px;
